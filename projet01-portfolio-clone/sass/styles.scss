@@ -4,6 +4,8 @@
 @import "variables";
 @import "globale";
 
+
+// la section Home
 .home{
     display: flex;
     flex-direction: column;
@@ -81,5 +83,26 @@
     img.shape{
         width: 80%;
         height: 100%;
+    }
+}
+// la section About
+.about{
+    background-color: $bgColor-2;
+    padding: 2rem $padding-8-100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .gros-titre-h1{
+        @extend h1;
+    }
+    .container-texts{
+        width: 45%;
+    }
+}
+.container-imgs{
+    width: 35%;
+    img{
+        width: 90%;
     }
 }
