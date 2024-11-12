@@ -1,3 +1,85 @@
-h1{
-    color: red;
+
+@import "fonts";
+@import "selecteurHtml";
+@import "variables";
+@import "globale";
+
+.home{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: $lightColor;
+    background-color: $bgColor-1;
+}
+.btn{
+    background-color: $primaryColor;
+    color: $lightColor;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.81rem 1.87rem;
+    border: 2px solid transparent;
+    transition: .3s;
+    &:hover{
+        color: $primaryColor;
+        font-weight: 600;
+        background-color: transparent;
+        border: 2px solid $lightColor;
+    }
+}
+.btn-sub{
+    @extend .btn;
+    border-radius: 30px 15px 30px 15px;
+}
+.btn-down{
+    @extend .btn;
+    border-radius: 30px;
+}
+.content{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 $padding-8-100;
+}
+.container-texts{
+    position: relative;
+    bottom: 70px;
+}
+
+.social{
+    margin-top: 3.5rem;
+    img{
+        margin-right: 1rem;
+        width: 2.1rem;
+        transition: .3s;
+    }
+    img:hover{
+        transform: scale(1.2);
+    }
+}
+.container-images{
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self: flex-end;
+
+    img{
+        bottom: 0;
+        left: 50%;
+        height: 100%;
+        position: absolute;
+        transform:translateX(-50%);
+        transition: bottom 1s, left 1s;
+    }
+    &:hover .shape{
+        bottom: 40px;
+    }
+    &:hover .mypic{
+        left: 45%;
+    }
+    img.shape{
+        width: 80%;
+        height: 100%;
+    }
 }

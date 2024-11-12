@@ -1,5 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  cursor: pointer;
+}
+
+span {
+  color: #ff274b;
+}
+
+nav {
+  padding: 2.9rem 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+nav li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ff274b;
+}
+
 h1 {
-  color: red;
+  font-size: 3.2rem;
+  margin: 1.7rem 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 3.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color: #f7bcf7;
+}
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: #ffffff;
+  background-color: #171a1c;
+}
+
+.btn, .btn-down, .btn-sub {
+  background-color: #ff274b;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.81rem 1.87rem;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.btn:hover, .btn-down:hover, .btn-sub:hover {
+  color: #ff274b;
+  font-weight: 600;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.btn-sub {
+  border-radius: 30px 15px 30px 15px;
+}
+
+.btn-down {
+  border-radius: 30px;
+}
+
+.content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.container-texts {
+  position: relative;
+  bottom: 70px;
+}
+
+.social {
+  margin-top: 3.5rem;
+}
+.social img {
+  margin-right: 1rem;
+  width: 2.1rem;
+  transition: 0.3s;
+}
+.social img:hover {
+  transform: scale(1.2);
+}
+
+.container-images {
+  width: 45%;
+  height: 90%;
+  position: relative;
+  align-self: flex-end;
+}
+.container-images img {
+  bottom: 0;
+  left: 50%;
+  height: 100%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+.container-images:hover .shape {
+  bottom: 40px;
+}
+.container-images:hover .mypic {
+  left: 45%;
+}
+.container-images img.shape {
+  width: 80%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
