@@ -3,6 +3,7 @@
 html{
     font-family: $font-family-primary;
     font-size: $size-standart;
+    color: $lightColor;
 }
 h2{
     font-size: 1.6rem;
@@ -36,7 +37,7 @@ nav{
 }
 h1{
     font-size: 3.20rem;
-    margin: 1.7rem 0;
+    margin: 1.7rem 0 0.3rem;
 }
 h3{
     font-size: 1.3rem;
@@ -46,4 +47,20 @@ h4{
     font-size: 1.25rem;
     letter-spacing: 0.12rem;
     color: $secondeColor;
+}
+p{
+    color: $secondeColor;
+    letter-spacing: 1px;
+    line-height: 1.3;
+    font-size: 0.9rem;
+
+    // &::first-letter{
+    //     font-size: 1.3rem;
+    //     font-weight: bold;
+    //     color: $primaryColor;
+    // }
+}
+h5{
+    font-size: 1.37rem;
+    margin-bottom: 1.5rem;
 }
