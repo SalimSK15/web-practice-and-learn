@@ -65,12 +65,20 @@ h5 {
   margin-bottom: 1.5rem;
 }
 
+footer {
+  padding: 2rem 8%;
+  background-color: #171a1c;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/*-------------------------------------------------------
+---------------------- la section Home
+-------------------------------------------------------*/
 .home {
   display: flex;
   flex-direction: column;
@@ -154,6 +162,9 @@ h5 {
   height: 100%;
 }
 
+/*-------------------------------------------------------
+---------------------- la section About
+-------------------------------------------------------*/
 .about {
   background-color: #22282a;
   padding: 2rem 8%;
@@ -175,6 +186,9 @@ h5 {
   width: 90%;
 }
 
+/*-------------------------------------------------------
+---------------------- la section Services
+-------------------------------------------------------*/
 .services {
   background-color: #171a1c;
   padding: 2rem 8%;
@@ -205,6 +219,9 @@ h5 {
   margin: 2rem;
 }
 
+/*-------------------------------------------------------
+---------------------- la section skills
+-------------------------------------------------------*/
 .skills {
   background-color: #22282a;
   padding: 2rem 8%;
@@ -240,5 +257,32 @@ h5 {
   justify-content: center;
   align-items: center;
 }
+
+/*-------------------------------------------------------
+---------------------- la section footer
+-------------------------------------------------------*/
+.content-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.content-footer h2 {
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+}
+.content-footer p {
+  color: #ffffff;
+  text-align: center;
+  width: 500px;
+}
+.content-footer .end {
+  color: #ff274b;
+  margin-top: 1rem;
+}
+
+/*-------------------------------------------------------
+---------------------- @ media Queries
+-------------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
