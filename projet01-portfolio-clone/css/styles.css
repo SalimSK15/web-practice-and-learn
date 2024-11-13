@@ -37,7 +37,7 @@ nav a:hover {
   color: #ff274b;
 }
 
-h1, .about .gros-titre-h1 {
+h1, .services .service-titre-h1, .about .about-titre-h1 {
   font-size: 3.2rem;
   margin: 1.7rem 0 0.3rem;
 }
@@ -161,6 +161,9 @@ h5 {
   align-items: center;
   justify-content: space-between;
 }
+.about .about-titre-h1 {
+  font-weight: bold;
+}
 .about .container-texts {
   width: 45%;
 }
@@ -170,6 +173,36 @@ h5 {
 }
 .container-imgs img {
   width: 90%;
+}
+
+.services {
+  background-color: #171a1c;
+  padding: 2rem 8%;
+}
+.services .service-titre-h1 {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+}
+.box .card {
+  width: 250px;
+  background-color: #22282a;
+  border-radius: 20px;
+  padding: 1.3rem 2rem;
+  text-align: center;
+}
+.box .card em {
+  font-size: 3.12rem;
+  text-align: center;
+  color: #ff274b;
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
