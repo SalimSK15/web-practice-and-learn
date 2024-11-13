@@ -37,7 +37,7 @@ nav a:hover {
   color: #ff274b;
 }
 
-h1, .services .service-titre-h1, .about .about-titre-h1 {
+h1, .skills .skills-titre-h1, .services .service-titre-h1, .about .about-titre-h1 {
   font-size: 3.2rem;
   margin: 1.7rem 0 0.3rem;
 }
@@ -203,6 +203,42 @@ h5 {
   text-align: center;
   color: #ff274b;
   margin: 2rem;
+}
+
+.skills {
+  background-color: #22282a;
+  padding: 2rem 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills .skills-titre-h1 {
+  font-weight: bold;
+}
+.skills .container-skills {
+  width: 50%;
+}
+
+.container-skills {
+  width: 35%;
+}
+.container-skills img {
+  width: 90%;
+}
+
+.content-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-skills .skill {
+  width: 48px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 25% 20% 15% 0;
+  margin: 0 1.3rem 1.3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=styles.css.map */
