@@ -16,8 +16,8 @@ span {
 }
 
 nav {
-  display: flex;
   padding: 2.9rem 8%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   font-size: 14px;
