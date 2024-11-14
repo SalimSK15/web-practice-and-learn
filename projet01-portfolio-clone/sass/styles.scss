@@ -212,6 +212,8 @@
 /*-------------------------------------------------------
 ---------------------- menu mobile
 -------------------------------------------------------*/
+
+// la partie home
 #menu-phone{
     display: none;
     position: relative;
@@ -251,6 +253,7 @@
 /*-------------------------------------------------------
 ---------------------- @ media Queries
 -------------------------------------------------------*/
+// la partie home
 @media only screen and (max-width: 575px) {
     html{
         font-size: $size-resPhone;
@@ -305,5 +308,367 @@
     #menu-phone{
         display: block;
 
+    }
+
+    // la partie about
+    .about{
+        justify-content: center;
+        .container-imgs{
+            display: none;
+        }
+        .container-texts{
+            width: 100%;
+        }
+    }
+    .box{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    // la partie skills
+    .skills{
+        .container-imgs{
+            display: none;
+        }
+        .container-skills{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        .content-skills{
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .skill{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // la partie footer
+    .content-footer{
+        p{
+            width: 80%;
+        }
+    }
+}
+@media only screen and (min-width: 575px) and (max-width: 767px) {
+    html{
+        font-size: $size-resPhone;
+    }
+    .container-images{
+        display: none;
+    }
+    .content{
+        padding-top: 82px;
+    }
+    nav{
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 82px;
+        background-color: $bgColor-1;
+        z-index: 2;
+        box-shadow: 2px 3px 5px $lightColor;
+        h2{
+            font-size: 2.1rem;
+            margin-left: -20px;
+        }
+    }
+    nav ul{
+        position: fixed;
+        display: none;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 45vh;
+        background-color: $bgColor-2;
+        box-shadow: 2px 3px 5px $lightColor;
+
+        li{
+           text-align: center;
+           display: block;
+           margin: 20px;
+        }
+        &.is-active{
+            display: block;
+        }
+    }
+    
+    nav > a{
+        display: none;
+    }
+    .container-texts{
+        bottom: 25px;
+    }
+    .social{
+        margin-top: 4rem;
+    }
+    h3{
+        margin-bottom: 50px;
+    }
+    #menu-phone{
+        display: block;
+
+    }
+
+    // la partie about
+    .about{
+        justify-content: center;
+        .container-imgs{
+            display: none;
+        }
+        .container-texts{
+            width: 100%;
+        }
+    }
+    .box{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    // la partie skills
+    .skills{
+        .container-imgs{
+            display: none;
+        }
+        .container-skills{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        .content-skills{
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .skill{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // la partie footer
+    .content-footer{
+        p{
+            width: 80%;
+        }
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html{
+        font-size: $size-resPhone;
+    }
+    .container-images{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 82px;
+        background-color: $bgColor-1;
+        z-index: 2;
+        // padding-top: 0;
+        // border: 2px solid $bgColor-2;
+        h2{
+            font-size: 1.1rem;
+            margin-left: -20px;
+        }
+    }
+    nav ul{
+        position: fixed;
+        display: none;
+        top: 0; left: 0;
+        width: 100vw;
+        height: 20vh;
+        background-color: $bgColor-2;
+        box-shadow: 2px 3px 5px $lightColor;
+
+        li{
+           text-align: center;
+           display: block;
+           margin: 20px;
+        }
+        &.is-active{
+            display: block;
+        }
+    }
+    
+    nav > a{
+        display: none;
+    }
+    .container-texts{
+        bottom: 25px;
+    }
+    .social{
+        margin-top: 4rem;
+    }
+    h3{
+        margin-bottom: 50px;
+    }
+    #menu-phone{
+        display: block;
+
+    }
+    // la partie home
+    .home {
+        width: 100%;
+        height: 60vh;
+    }
+    nav h2 {
+        font-size: 2.1rem;
+        margin-left: -20px;
+    }
+    // la partie about
+    .about{
+        justify-content: center;
+        .container-imgs{
+            display: none;
+        }
+        .container-texts{
+            width: 100%;
+        }
+    }
+    .box{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    // la partie skills
+    .skills{
+        .container-imgs{
+            display: none;
+        }
+        .container-skills{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        .content-skills{
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .skill{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // la partie footer
+    .content-footer{
+        p{
+            width: 80%;
+        }
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1279px) {
+    html{
+        font-size: $size-resPhone;
+    }
+    .container-images{
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    #menu-phone{
+        display: block;
+        margin-right: 20px;
+    }
+    .btn-sub{
+        margin-right: -320px;
+    }
+    .content{
+        margin-top: 5%;
+    }
+    nav{
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        height: 82px;
+        background-color: $bgColor-1;
+        z-index: 2;
+        // padding-top: 0;
+        // border: 2px solid $bgColor-2;
+        h2{
+            font-size: 1.1rem;
+            margin-left: -20px;
+        }
+    }
+    nav ul{
+        position: fixed;
+        display: none;
+        top: 0; right: 0;
+        width: 50%;
+        height: 25vh;
+        background-color: $bgColor-2;
+        box-shadow: 2px 3px 5px $lightColor;
+
+        li{
+           text-align: center;
+           display: block;
+           margin: 20px;
+        }
+        &.is-active{
+            display: block;
+        }
+    }
+    
+    .container-texts{
+        bottom: 25px;
+    }
+    .social{
+        margin-top: 4rem;
+    }
+    h3{
+        margin-bottom: 50px;
+    }
+    // la partie home
+    .home {
+        width: 100%;
+        height: 60vh;
+    }
+    nav h2 {
+        font-size: 2.1rem;
+        margin-left: -20px;
+    }
+    // la partie about
+    .about{
+        justify-content: center;
+        .container-texts{
+            width: 60%;
+        }
+    }
+    .box{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    // la partie skills
+    .skills{
+        .container-skills{
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+        }
+        .content-skills{
+            margin-top: 2rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .skill{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    // la partie footer
+    .content-footer{
+        p{
+            width: 80%;
+        }
     }
 }
