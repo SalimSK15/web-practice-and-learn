@@ -1,0 +1,28 @@
+$phone : 575px !default;
+$tablette: 768px !default;
+$ecranLarge: 992px !default;
+$ecranExtraLarge: 1279px !default;
+
+@mixin phone {
+    @media only screen and (max-width: #{$phone}) {
+      @content;
+    }
+  }
+  
+  @mixin tablette {
+    @media only screen and (min-width: #{$phone}) and (max-width: #{$tablette - 1}) {
+      @content;
+    }
+  }
+  
+  @mixin ecranLarge {
+    @media only screen and (min-width: #{$tablette}) and (max-width: #{$ecranLarge - 1}) {
+      @content;
+    }
+  }
+  
+  @mixin ecranExtraLarge {
+    @media only screen and (min-width: #{$ecranLarge}) and (max-width: #{$ecranExtraLarge}) {
+      @content;
+    }
+  }
