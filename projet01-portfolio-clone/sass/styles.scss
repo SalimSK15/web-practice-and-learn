@@ -3,6 +3,7 @@
 @import "selecteurHtml";
 @import "variables";
 @import "globale";
+@import "responsive";
 
 /*-------------------------------------------------------
 ---------------------- la section Home
@@ -254,7 +255,7 @@
 ---------------------- @ media Queries
 -------------------------------------------------------*/
 // la partie home
-@media only screen and (max-width: 575px) {
+@include phone {
     html{
         font-size: $size-resPhone;
     }
@@ -354,7 +355,7 @@
         }
     }
 }
-@media only screen and (min-width: 575px) and (max-width: 767px) {
+@include tablette {
     html{
         font-size: $size-resPhone;
     }
@@ -456,7 +457,7 @@
         }
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@include ecranLarge {
     html{
         font-size: $size-resPhone;
     }
@@ -564,7 +565,7 @@
         }
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1279px) {
+@include ecranExtraLarge {
     html{
         font-size: $size-resPhone;
     }
