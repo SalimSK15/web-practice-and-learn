@@ -41,7 +41,30 @@ body{
     .exoc{
         background-color: chocolate;
         margin: 20px;
-        width: 90%;
-        flex-basis: 10%;
+        width: 50%;
+        height: 60px;
+    }
+}
+// Exo : 03
+.partie03{
+    width: 800px;
+    height: 400px;
+    background-color: #346e33;
+    margin: 50px auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    .exod{
+        width: 120px;
+        height: 120px;
+        margin: 5px;
+        background-color: chocolate;
+    }
+    .d2{
+        margin: auto;
+    }
+    .d3{
+        align-self: self-end;
     }
 }

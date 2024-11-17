@@ -34,8 +34,30 @@
 .partie02 .exoc {
   background-color: chocolate;
   margin: 20px;
-  width: 90%;
-  flex-basis: 10%;
+  width: 50%;
+  height: 60px;
+}
+
+.partie03 {
+  width: 800px;
+  height: 400px;
+  background-color: #346e33;
+  margin: 50px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+.partie03 .exod {
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+  background-color: chocolate;
+}
+.partie03 .d2 {
+  margin: auto;
+}
+.partie03 .d3 {
+  align-self: self-end;
 }
 
 /*# sourceMappingURL=styles.css.map */
