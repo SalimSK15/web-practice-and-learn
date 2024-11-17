@@ -1,94 +1,115 @@
-* {
+*, ::before, ::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-span {
-  color: rgb(226, 43, 214);
-}
-
-p {
-  margin: 10px 0;
-}
-p span {
-  font-size: 18px;
-  font-weight: 600;
-}
-
-.container {
-  font-family: sans-serif;
-  color: #fff;
-  margin: 50px auto;
-  background-color: black;
-  width: 60%;
-  height: 500px;
+body {
+  height: 100vh;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  position: 0 1rem;
 }
 
-.bg-img {
-  width: 30%;
-  background-position: 70% center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: all 0.5s;
-  background-image: url("../assets/images/CarteSerieTv/image.jpg");
+.card {
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  flex-shrink: 0;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.card .card-img {
+  width: 35%;
+  height: 100%;
+  background: no-repeat center/cover url("../assets/images/CarteSerieTv/image.jpg");
+  z-index: 1;
+  background-position: -450px 0;
 }
 
-.contenueCarte {
-  padding: 10px 20px;
-  width: 70%;
+.content {
+  width: 65%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
 }
-.contenueCarte img {
-  width: 200px;
+.content .infos {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  color: rgb(184, 102, 239);
 }
-.contenueCarte p {
-  font-size: 18px;
-  padding: 5px 40px 10px 0;
+.content .infos p {
+  padding: 0 20px;
+  width: 10%;
 }
-.contenueCarte a {
+.content .synopsis {
+  width: 80%;
+  padding: 10px 0 0 10px;
+  position: relative;
+  z-index: 100;
+}
+.content .synopsis a {
   text-decoration: none;
+  color: rgb(184, 102, 239);
+}
+.content .synopsis:hover {
+  color: crimson;
 }
 
-.btn {
+.btns {
+  width: 80%;
   display: flex;
-}
-.btn img {
-  width: 24px;
-  height: 24px;
-}
-
-.rating .star {
-  cursor: pointer;
-  font-size: 20px;
-  margin-right: 10px;
-  display: inline-block;
-  color: rgba(213, 232, 5, 0.5);
-  transition: transform 0.3s ease-in-out, color 0.3s;
-}
-.rating .star:hover {
-  transform: scale(1.4);
-  color: rgb(213, 232, 5);
-}
-
-.btn-contenu {
-  padding: 5px 10px;
-  margin-right: 10px;
-  width: 200px;
-  display: flex;
-  border-radius: 5px;
-  border: 2px solid rgb(226, 43, 214);
-}
-.btn-contenu img {
-  margin: 0 10px;
-}
-.btn-contenu button {
-  cursor: pointer;
-  background-color: transparent;
-  outline-offset: none;
-  border: none;
   color: #fff;
-  font-size: 16px;
+  padding: 10px 0 0 15px;
+}
+.btns .btn {
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid rgb(184, 102, 239);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 50;
+  transition: backround 0.2s ease-in;
+}
+.btns .btn:hover {
+  background: rgba(241, 241, 241, 0.0705882353);
+}
+
+.icon img {
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.classement {
+  width: 100%;
+  display: flex;
+  padding: 10px 0 0 13px;
+}
+.classement .stars {
+  margin: 0 5px;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  margin: 1rem;
+}
+.logo img {
+  width: 180px;
 }
 
 /*# sourceMappingURL=styles.css.map */
