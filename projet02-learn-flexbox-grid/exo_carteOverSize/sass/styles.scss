@@ -1,67 +1,78 @@
-*{
+*, ::after, ::before{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background-color: #aea8a8;
-}
-.container{
+    min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
-    .card{
-        margin: 20px;
-        background-color: #fff;
-        border-radius: 20px;
-        width: 250px;
-        height: 90%;
-        overflow: hidden;
-        box-shadow: 0 6px 8px rgba($color: #000000, $alpha: .5);
-    }
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(213, 213, 213);
 }
-.bg-img{
-    margin-bottom: -4px;
-    width: 100%;
-    position: relative;
-    background-image: url("../imges/fond.jpg");
-    background-size: cover;
-    background-position: center;
-    img{
-        position: relative;
-        bottom: 50px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        z-index: 2;
-        border-radius: 20px 20px 0 0;
-    }
-}
-.infos{
-    width: 100%;
-    h1{
+.cartes{
+    width: 300px;
+    height: 520px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 5px rgba(0, 0, 0,.2);
+    margin: 3rem 60px;
+    .title{
+        height: 5%;
+        margin: 1rem 0;
         text-align: center;
-        padding: 15px 0;
-        font-size: 30px;
     }
-    p{
+    .info{
         text-align: justify;
-        padding: 0 20px 10px;
-        word-spacing: 5px;
-        color: #222;
-        font-size: 14px;
+        height: 30%;
+        padding: 10px 30px 0 30px;
+        line-height: 18px;
+        font-size: 15px;
+    }
+    
+}
+
+.colors{
+    height: 50%;
+    background: #333;
+    background: no-repeat center / cover url(../imges/fond.jpg);
+    position: relative;
+    // border-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    img{
+        width: 300px;
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
 }
-.btn{
-    text-align: center;
-    border-radius: 5px;
-    margin: 15px;
-    
-    button{
-        padding: 5px 15px;
+
+.box-btn{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 15px;
+    .btn{
+        width: 120px;
+        height: 30px;
+        outline: none;
+        border: 1px solid midnightblue;
+        color: midnightblue;
+        cursor: pointer;
         border-radius: 5px;
-        border: 1px solid #222;
-        background-color: transparent;
-    } 
+        transition: color .2s ease-in, background .2s ease-in;
+        &:hover{
+            background: midnightblue;
+            color: #f1f1f1;
+        }
+    }
 }
