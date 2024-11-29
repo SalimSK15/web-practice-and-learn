@@ -1,0 +1,113 @@
+$violet: rgb(184,102,239);
+$light : #fff;
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: 0 1rem;
+}
+.card{
+    max-width: 800px;
+    width: 100%;
+    height: 450px;
+    flex-shrink: 0;
+    background-color: #000;
+    color: $light;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 5px rgba(0,0,0,.2);
+    .card-img{
+        width: 35%;
+        height: 100%;
+        background: no-repeat center / cover url("../assets/images/CarteSerieTv/image.jpg");
+        z-index: 1;
+        background-position: -450px 0;
+    }
+    
+}
+.content{
+    width: 65%;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    .infos{
+        width: 100%;
+        display: flex;
+        font-size: 14px;
+        color: $violet;
+        p{
+            padding: 0 20px;
+            width: 10%;
+        }
+    }
+    .synopsis{
+        width: 80%;
+        padding: 10px 0 0 10px;
+        position: relative;
+        z-index: 100;
+        a{
+            text-decoration: none;
+            color: $violet;
+        }
+        &:hover{
+            color: crimson;
+        }
+    }
+}
+.btns{
+    width: 80%;
+    display: flex;
+    color: $light;
+    padding: 10px 0 0 15px;
+    .btn{
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        border: 1px solid $violet;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px;
+        cursor: pointer;
+        z-index: 50;
+        transition: backround .2s ease-in;
+        &:hover{
+            background: #f1f1f112;
+
+        }
+    }
+}
+.icon{
+    img{
+        width: 20px;
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+}
+.classement{
+    width: 100%;
+    display: flex;
+    padding: 10px 0 0 13px;
+    .stars{
+        margin: 0 5px;
+        margin-bottom: 1rem;
+    }
+}
+.logo{
+    margin: 1rem;
+    img{
+        width: 180px; 
+    }
+}
+    

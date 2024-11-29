@@ -1,0 +1,115 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: 0 1rem;
+}
+
+.card {
+  max-width: 800px;
+  width: 100%;
+  height: 450px;
+  flex-shrink: 0;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 200px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.card .card-img {
+  width: 35%;
+  height: 100%;
+  background: no-repeat center/cover url("../assets/images/CarteSerieTv/image.jpg");
+  z-index: 1;
+  background-position: -450px 0;
+}
+
+.content {
+  width: 65%;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+.content .infos {
+  width: 100%;
+  display: flex;
+  font-size: 14px;
+  color: rgb(184, 102, 239);
+}
+.content .infos p {
+  padding: 0 20px;
+  width: 10%;
+}
+.content .synopsis {
+  width: 80%;
+  padding: 10px 0 0 10px;
+  position: relative;
+  z-index: 100;
+}
+.content .synopsis a {
+  text-decoration: none;
+  color: rgb(184, 102, 239);
+}
+.content .synopsis:hover {
+  color: crimson;
+}
+
+.btns {
+  width: 80%;
+  display: flex;
+  color: #fff;
+  padding: 10px 0 0 15px;
+}
+.btns .btn {
+  width: 180px;
+  height: 40px;
+  font-size: 14px;
+  border: 1px solid rgb(184, 102, 239);
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  cursor: pointer;
+  z-index: 50;
+  transition: backround 0.2s ease-in;
+}
+.btns .btn:hover {
+  background: rgba(241, 241, 241, 0.0705882353);
+}
+
+.icon img {
+  width: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.classement {
+  width: 100%;
+  display: flex;
+  padding: 10px 0 0 13px;
+}
+.classement .stars {
+  margin: 0 5px;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  margin: 1rem;
+}
+.logo img {
+  width: 180px;
+}
+
+/*# sourceMappingURL=styles.css.map */
