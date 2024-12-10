@@ -8,55 +8,79 @@
     <title>Footer Responsive</title>
 </head>
 <body>
-    <div class="titre">
+    <header class="titre">
         <h1>Footer responsive</h1>
-    </div>
+    </header>
     <footer>
-        <div class="footer-container">
-            <section  class="section">
+        <div class="footer-content">
+            <section class="left box">
                 <h2>A propos</h2>
-                <p class="apropos-txt">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Qui libero voluptatibus earum in ab, totam neque 
-                    voluptates quidem odit aspernatur distinctio culpa quae, 
-                    rem illo aliquam a sunt? Rerum, voluptatem? Lorem.
-                </p>
-                <div class="icons"> 
-                    <em><img src="images/facebook.svg"  alt="icon faceboook"></em>
-                    <em><img src="images/instagram.svg" alt="icon instagram"></em>
-                    <em><img src="images/youtube.svg"   alt="Icon Youtube">  </em>
-                    <em><img src="images/linkedin.svg"  alt="Icon linkedin"> </em>
+                <div class="box-content">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Qui libero voluptatibus earum in ab, totam neque 
+                        voluptates quidem odit aspernatur distinctio culpa quae, 
+                        rem illo aliquam a sunt? Rerum, voluptatem? Lorem.
+                    </p>
+                    <div class="reseaux"> 
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>   
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitch"></ion-icon></a>
+                    </div>
                 </div>
             </section>
-            <section class="section">
+            <section class="center box">
                 <h2>Infos</h2>
-                <div class="infos-sec">
-                    <em><img src="images/adresse.svg" alt=""></em>
-                    <p>35 rue du dev, Paris 75000 (France)</p>
-                </div>
-                <div class="infos-sec">
-                    <em><img src="images/phone.svg" alt=""></em>
-                    <p>+33 000 000 0000</p>
-                </div>
-                <div class="infos-sec">
-                    <em><img src="images/email.svg" alt=""></em>
-                    <p>laminutedecode@gmail.com</p>
+                <div class="box-content">
+                    <div class="infos">
+                        <div class="icons">
+                            <ion-icon name="flag-outline"></ion-icon>
+                        </div>
+                        <span>35, rue du dev, Paris 75000 (France)</span>
+                    </div>
+                    <div class="infos">
+                        <div class="icons">
+                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                        </div>
+                        <span>+33 0 00 00 00 00</span>
+                    </div>
+                    <div class="infos">
+                        <div class="icons">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <span>salimdu15@outlook.fr</span>
+                    </div>
                 </div>
             </section>
-            <section class="section">
-                <div class="contact-sec">
-                    <h2>Contact</h2>
-                    <label for="Email">Email <span>*</span></label>
-                    <input type="email" name="Email" id="Email">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" cols="50" rows="5"></textarea>
-                    <button type="submit">Envoyer</button>
+            <section class="right box">
+                <h2>Contact</h2>
+                <div class="box-content">
+                    <form action="#">
+                        <div class="email">
+                            <label for="Email">Email <span>*</span></label>
+                            <input type="email" name="Email" id="Email" required>
+                        </div>
+                        <div class="message">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="50" rows="5"></textarea>
+                        </div>
+                        <button type="submit">Envoyer</button>
+                    </form>
                 </div>
             </section>
         </div>
-        <div class="CreatedBy">
-            <p>Created by <span>Sk Dev</span> - &copy; Tous droits reserves - 2023</p>
+        <div class="bottom">
+            <p>
+                <span>Created by 
+                    <a href="#">la minute de code </a> 
+                </span> - &copy; Tous droits reserves - 2023
+            </p>
         </div>
     </footer>
+
+<!-- script de ionicons -->
+    <script  type = "module"  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js" > </script> 
+    <script  nomodule  src = "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js" > </script>
 </body>
 </html>
