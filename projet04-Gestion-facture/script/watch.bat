@@ -1,0 +1,1 @@
+.\dart-sass\sass .\projet04-Gestion-facture\sass\styles.scss .\projet04-Gestion-facture\css\styles.css --watch
