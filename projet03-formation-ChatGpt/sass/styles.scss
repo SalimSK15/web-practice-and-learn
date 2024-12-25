@@ -1,0 +1,104 @@
+/* styles.scss */
+
+/* Variables pour les couleurs */
+$clr-title: black;
+$bg-color: #c5c2c2;
+$primary-color: #3498db;
+$button-bg: #079341;
+$button-color: white;
+
+
+// jai lhabitude dutiliser cette methode tu pense quoi ?
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+//   margin: 0;
+//   padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+  width: 100%;
+  max-width: 600px; // ici pourquoi ta utiliser max-width avec width a 100%
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(156, 230, 39);
+  box-shadow: 0 0 10px rgb(251, 251, 251);
+  border-radius: 8px;
+}
+
+/* Style du titre */
+h1 {
+  text-align: center;
+  color: $clr-title;
+}
+
+/* Style de l'input */
+// ici pourquoi on a pas utiliser des class eux lieu de id jai cru que id juste pour js 
+#taskInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+//   outline-color: $primary-color;
+//   outline: transparent;
+//   background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Style du bouton */
+#addTaskButton {
+  width: 100%;
+  padding: 10px;
+  background-color: $button-bg;
+  color: $button-color;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color .3s;
+}
+
+#addTaskButton:hover {
+  background-color: darken($button-bg, 8%);
+  color: black;
+}
+
+/* Liste des tâches */
+// pour cette partie comme je peut pas ajouter des tache pour le moment je ne peut pas voir le visuel 
+// mais je comprend 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+li.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+button.delete {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
