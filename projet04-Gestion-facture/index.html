@@ -7,15 +7,21 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Gestion des Factures & Habitudes</h1>
-  </header>
-  <main>
-    <form id="taskForm">
-      <input type="text" id="taskInput" placeholder="Ajouter une tâche ou facture" required>
-      <button type="submit" id="addTaskButton">Ajouter</button>
-    </form>
-    <ul id="taskList"></ul>
-  </main>
+    <div class="container">
+        <header>
+          <h1>Gestion des Factures & Habitudes</h1>
+        </header>
+        <main>
+          <form id="taskForm">
+            <label for="taskInput" class="sr-only">Ajouter une tâche ou facture</label>
+            <input type="text" id="taskInput" 
+                placeholder="Ajouter une tâche ou facture" required
+                aria-label="Entrer une tâche ou une facture">
+            <button type="submit" id="addTaskButton">Ajouter</button>
+          </form>
+          <ul id="taskList"></ul>
+        </main>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
