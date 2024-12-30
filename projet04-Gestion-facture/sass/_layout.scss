@@ -1,0 +1,50 @@
+.container {
+    max-width: 600px;
+    margin: 50px auto; // Centrer horizontalement et ajouter un espacement vertical
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  header h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: $clr-primary;
+    margin-bottom: 20px;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; // Espacement entre les champs
+  
+    input, button {
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+  
+    input {
+      border: 1px solid $clr-secondary;
+      color: $clr-secondary;
+      outline: none;
+  
+      &:focus {
+        border-color: $clr-primary;
+        box-shadow: 0 0 5px rgba($clr-primary, 0.5);
+      }
+    }
+  
+    button {
+      background-color: $clr-accent;
+      color: white;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: darken($clr-accent, 10%);
+      }
+    }
+  }
+    
