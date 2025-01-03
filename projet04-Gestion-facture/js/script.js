@@ -1,97 +1,63 @@
-class Rectangle {
-    constructor(width, height){
-        if(width <= 0 || height <=0){
-            throw new Error("valeur negative non accepter !",{cause: {code: 404, url: "page introuvable !"}});
-        }
-        this.width = width;
-        this.height = height;
-    }
+//  pratique les class et try catch throw
+// function gestionErreur(nb1, nb2, op){
+//     const operations = ["-","+","*","/"];
+//     if(typeof nb1 !==("number") || typeof nb2 !== ("number")){
+//         throw new Error("Veuillez entree des nombres !");
+//     }else if(!operations.includes(op)){
+//             throw new Error(`les operation permisent : " + - / * "`);
+//         }else if(op === "/" && nb2 === 0){
+//                 throw new Error("divistion interdite sur 0");
+//             }
+// }
+// function calculer(nb1, nb2, op){
     
-    get perimeter (){
-        return 2 * (this.width + this.height);
-    }
-    get isValid(){
-        return this.largeur > 0 && this.hauteur > 0;
-    }
-    isBiggerThan(r){
-        return this.perimeter > r.perimeter;
-    }
-}
-class Square extends Rectangle{
-    constructor(width){
-        super(width, width)
-    }
-    isBiggerThan(r){
-        return this.perimeter > r.perimeter;
-    }
-}
-const r = new Rectangle(10, 20);
-console.log(r.perimeter);
-console.log(r.isValid);
+//     let resulta;
+//     switch (op) {
+//         case "/": resulta = nb1 / nb2; break;
+//         case "*": resulta = nb1 * nb2; break;
+//         case "+": resulta = nb1 + nb2; break;
+//         case "-": resulta = nb1 - nb2; break;
+//     }
+//     return resulta;
+// }
+// try{
+//     const val1 = parseInt(prompt("Veuillez saisir la 1er nombre "),10);
+//     const val2 = parseInt(prompt("Veuillez saisir le 2eme nombre "),10);
+//     const operation = prompt("veuillez saisir une operation : * / + -");
 
+//     gestionErreur(val1, val2, operation);
+//     calculer(val1, val2, operation);
+//     console.log("Operation : "+val1+" "+operation+" "+val2+" = "+calculer(val1, val2, operation));
+// }catch(e){
+//     console.error(e);
+// }
+
+class Calculator{
+    operations = {
+        "+": (a, b) => a + b,"-": (a, b) => a - b,"*": (a, b) => a * b,"/": (a, b) => a / b
+    }
+    get operationsPermises(){
+        return Object.keys(this.operations);
+    }
+    gestionErreur(nb1, nb2, operateur){
+        if(Number.isNaN(nb1) || Number.isNaN(nb2)) throw new Error("Ce nest pas une valeur numerique !")
+        if(!this.operations.hasOwnProperty (operateur)) throw new Error("Operatios Permises : "+this.operationsPermises);
+        if(operateur === '/' && nb2 === 0) throw new Error("Division par '0' impossible");
+    }
+    calculeFormat (val1, val2, op){
+        this.gestionErreur(val1, val2, op);
+        const resulta = this.operations[op](val1, val2);
+        return `${val1} ${op} ${val2} = ${resulta}`;
+    }
+}
 try{
-    const r2 = new Rectangle(-10, 20);
-} catch(e){
-    console.error(e.message);
-    console.log(e.cause.code);
-    if(e.cause.code === 404){
-        console.log("impoissible de continuer");
-    }
+    const operation01 = new Calculator();
+    const val1 = parseFloat(prompt("Saisir la 1er valeur : "));
+    const val2 = parseFloat(prompt("Saisir la 2eme valeur : "));
+    const operation = (prompt("choisir une operation : "+operation01.operationsPermises));
+    const R = (operation01.calculeFormat(val1, val2, operation));
+    console.log(R);
+    alert(R);
+}catch (err){
+    console.error(err.message);
 }
-
-// console.log(r2.isValid);
-
-const c = new Square(10);
-console.log(c.perimeter);
-console.log(c.isBiggerThan(r));
-console.log(r.isBiggerThan(c));
-
-// class Book {
-//     constructor (titre, nbPage){
-//         this.titre = titre;
-//         this.nbPage = nbPage;
-//         this._page = 1;
-//     }
-//     get page(){
-//         return this._page;
-//     }
-//     nextPage(){
-//         this._page++;
-//     }
-//     close(){
-//         this._page = 1;
-//     }
-
-// }
-// class Library{
-//     constructor(){
-//         this.books = [];
-//     }
-//     addBook(book){
-//         this.books.push(book)
-//     }
-//     addBooks(tabBook){
-//         this.books.push(...tabBook);
-//     }
-//     findBooksByLettrer(lettre){
-//         const normalisationLettre = lettre.toUpperCase();
-//         console.log(this.books.filter(({titre}) => titre[0].toUpperCase() === normalisationLettre));
-//     }
-// }
-// const b = new Book("signeur des anneaux",200);
-// console.log(b.page);
-// b.nextPage();
-// console.log(b.page);
-// b.close();
-// console.log(b.page);
-
-// const l = new Library();
-// l.addBook(b);
-// l.addBooks([
-//     new Book("Ready player one", 100),
-//     new Book("oui-oui", 10),
-//     new Book("Sillage", 50),
-// ])
-// console.log(l);
-// console.log("les livre qui commence par la Lettre S sont :");
-// l.findBooksByLettrer("S"); 
